@@ -15,7 +15,7 @@ public class CVSReader {
             String row;
             while ((row = csvReader.readLine()) != null) {
                 String[] rows = row.split(",");
-                double[] values = new double[5];
+                double[] values = new double[4];
                 for (int i = 0; i < rows.length - 1; i++)
                     values[i] = Double.parseDouble(rows[i]);
                 data.add(new Element(values, Integer.parseInt(rows[4])));

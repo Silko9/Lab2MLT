@@ -6,7 +6,7 @@ import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
 public class Element {
-    private double[] attributes = new double[4];
+    private double[] attributes;
     private int category;
 
     public Element(double[] attributes){
@@ -17,9 +17,10 @@ public class Element {
         this.category = category;
     }
 
-    public double[] getAttributes() {
-        return attributes;
+    public double getAttribute(int index) {
+        return attributes[index];
     }
+    public int size(){return attributes.length;}
 
     public DoubleProperty getPropertyMar(){return new SimpleDoubleProperty(attributes[0]); }
     public DoubleProperty getPropertyKrm(){return new SimpleDoubleProperty(attributes[1]); }
@@ -29,6 +30,8 @@ public class Element {
     public int getCategory() {
         return category;
     }
+
+    public void setCategory(int category) {this.category = category;}
 
     public IntegerProperty getPropertyCategory() {return new SimpleIntegerProperty(category);}
 }
