@@ -129,7 +129,7 @@ public class MainController implements Initializable {
 
         tableTest.getItems().clear();
         tableTest.getItems().addAll(test);
-        btClan.setDisable(fisher != null);
+        btClan.setDisable(fisher == null);
     }
 
     @FXML private void onClickedRunFisher() {
