@@ -19,7 +19,7 @@
                   <VBox spacing="5.0">
                      <children>
                         <Label text="Обучающие данные" />
-                        <TableView fx:id="tableTrain" prefHeight="400.0" prefWidth="380.0">
+                        <TableView fx:id="tableTrain" prefHeight="300.0" prefWidth="380.0">
                           <columns>
                             <TableColumn fx:id="marTrain" prefWidth="75.0" text="Марганец" />
                             <TableColumn fx:id="krmTrain" prefWidth="75.0" text="Кремний" />
@@ -38,7 +38,7 @@
                            </padding>
                         </HBox>
                         <Label layoutX="20.0" layoutY="20.0" text="Тестовые данные" />
-                        <TableView fx:id="tableTest" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="380.0">
+                        <TableView fx:id="tableTest" layoutX="20.0" layoutY="20.0" prefHeight="300.0" prefWidth="380.0">
                            <columns>
                               <TableColumn fx:id="marTest" prefWidth="75.0" text="Марганец" />
                               <TableColumn fx:id="krmTest" prefWidth="75.0" text="Кремний" />
@@ -75,7 +75,7 @@
                               <VBox spacing="5.0">
                                  <children>
                                     <Label text="Матрицу разброса внутри классов" />
-                                    <TableView fx:id="tableX" prefHeight="400.0" prefWidth="380.0">
+                                    <TableView fx:id="tableX" prefHeight="300.0" prefWidth="380.0">
                                        <columns>
                                           <TableColumn fx:id="marX" prefWidth="75.0" text="Марганец" />
                                           <TableColumn fx:id="krmX" prefWidth="75.0" text="Кремний" />
@@ -89,7 +89,7 @@
                               <VBox layoutX="10.0" layoutY="10.0" spacing="5.0">
                                  <children>
                                     <Label text="Матрица A" />
-                                    <TableView fx:id="tableA" prefHeight="400.0" prefWidth="380.0">
+                                    <TableView fx:id="tableA" prefHeight="300.0" prefWidth="380.0">
                                        <columnResizePolicy>
                                           <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                                        </columnResizePolicy>
@@ -106,7 +106,7 @@
                               <VBox spacing="5.0">
                                  <children>
                                     <Label text="Коэф B" />
-                                    <TableView fx:id="tableB" prefHeight="400.0" prefWidth="380.0" />
+                                    <TableView fx:id="tableB" prefHeight="300.0" prefWidth="380.0" />
                                  </children>
                                  <padding>
                                     <Insets right="10.0" />
@@ -115,7 +115,7 @@
                               <VBox spacing="5.0">
                                  <children>
                                     <Label text="Коэф H" />
-                                    <TableView fx:id="tableH" prefHeight="400.0" prefWidth="380.0">
+                                    <TableView fx:id="tableH" prefHeight="300.0" prefWidth="380.0">
                                        <columns>
                                           <TableColumn fx:id="marH" prefWidth="75.0" text="Марганец" />
                                           <TableColumn fx:id="krmH" prefWidth="75.0" text="Кремний" />
